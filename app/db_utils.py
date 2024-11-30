@@ -25,7 +25,7 @@ def initialize_db(db_file):
             match_id UUID PRIMARY KEY DEFAULT uuid(),
             balls_per_over INTEGER DEFAULT 6,
             city TEXT,
-            dates TEXT[], -- Array of dates
+            date TEXT, -- Array of dates
             event_name TEXT,
             event_match_number INTEGER,
             event_group TEXT,

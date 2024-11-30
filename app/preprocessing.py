@@ -2,7 +2,7 @@
 import json
 import logging
 from typing import Any, Dict, List, Optional, Union
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import BaseModel, ValidationError
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 

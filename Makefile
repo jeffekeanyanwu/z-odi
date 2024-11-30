@@ -20,7 +20,7 @@ db-init:
 
 # Run the ingestion process
 run:
-	docker run --rm -v $(PWD):/app $(IMAGE_NAME) python app/ingest.py -t
+	docker run --rm -v $(PWD):/app $(IMAGE_NAME) python app/ingest.py
 
 # Clean up data and temporary files
 clean:
