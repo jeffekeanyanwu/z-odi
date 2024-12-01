@@ -206,7 +206,6 @@ def process_chunk(files: List[Path], db_path: str, chunk_num: int, total_chunks:
 
 if __name__ == "__main__":
     import argparse
-    from math import ceil
 
     parser = argparse.ArgumentParser(description='Cricket data ingestion script')
     parser.add_argument('-t', '--test', action='store_true',
