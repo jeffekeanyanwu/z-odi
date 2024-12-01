@@ -1,3 +1,4 @@
+-- win records for every team excluding DLS, ties, no results
 WITH match_results AS (
     SELECT
         EXTRACT(YEAR FROM date::DATE) as year,

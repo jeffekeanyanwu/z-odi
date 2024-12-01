@@ -1,3 +1,4 @@
+--which teams had the highest win percentage in 2019?
 WITH match_results AS (
     SELECT
         gender,
