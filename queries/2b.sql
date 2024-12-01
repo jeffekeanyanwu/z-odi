@@ -39,7 +39,7 @@ team_stats AS (
         ROW_NUMBER() OVER (PARTITION BY gender ORDER BY CAST(SUM(won) AS FLOAT) / COUNT(*) DESC) as rank
     FROM team_matches
     GROUP BY gender, team
-    HAVING COUNT(*) > 1 -- Exclude teams with only 1 match, otherwise for the males, it's Netherlands who were 1 of 1...
+    -- HAVING COUNT(*) > 1 -- Optional. Excludes teams with only 1 match (like NED in 2019), making it Namibia at 75%...
 )
 SELECT
     gender,
