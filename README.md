@@ -27,7 +27,7 @@ This will:
 ```bash
 make test
 ````
-This will run the same pipeline as above but only process the first 10 matches. Useful for testing the pipeline works correctly before running the full ingestion.
+This will run the same pipeline as above but only process the first 10 matches. Useful for testing the pipeline if works correctly before running the full ingestion. It took my machine about 20-25 minutes to ingest all the data.
 
 
 ### Clean Up
